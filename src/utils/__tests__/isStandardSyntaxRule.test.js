@@ -3,8 +3,6 @@ import less from "postcss-less"
 import postcss from "postcss"
 
 it("isStandardSyntaxRule", () => {
-  t.plan(19)
-
   rules("a {}", rule => {
     expect(isStandardSyntaxRule(rule)).toBeTruthy()
   })
